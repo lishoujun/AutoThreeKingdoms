@@ -9,7 +9,7 @@ from util import on_move, on_scroll
 
 
 STARTWAIT = 0  # 开始时可能还在占领倒计时，不能直接开始
-time.sleep(STARTWAIT)
+
 # 攻击按钮与点击位置的偏移量
 ATTACKBUTTONX = 120
 ATTACKBUTTONY = -74
@@ -29,7 +29,7 @@ ATTACKCANCELY = 101
 ATTACKBACKX = 2790
 ATTACKBACKY = 63
 
-DEBUG = True
+DEBUG = False
 
 
 def getsleeptime():
@@ -97,4 +97,5 @@ a=[123];print(a[-1])
 
 if __name__ == '__main__':
     positions = getpositions()
+    time.sleep(STARTWAIT)
     pointpos(positions)
